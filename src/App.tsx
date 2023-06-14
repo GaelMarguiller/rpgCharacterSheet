@@ -3,6 +3,8 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { Box, Flex, Text } from '@chakra-ui/react';
 
+import RpgCard from './components/rpgCard';
+
 const textFontSizes = [16, 18, 24, 30];
 
 function App(): JSX.Element {
@@ -35,6 +37,7 @@ function App(): JSX.Element {
                     This site is there to generate PDFs of character sheets from
                     different roleplaying games.
                 </Text>
+                <RpgCard />
             </Flex>
         </Box>
     );
