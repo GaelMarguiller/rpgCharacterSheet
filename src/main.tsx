@@ -7,6 +7,7 @@ import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import ErrorPage from './components/errorPage';
 import App from './App';
 import theme from './theme';
+import RpgCharactersSheetsPage from './RpgCharactersSheetsPage';
 
 const container = document.getElementById('root');
 
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/rpg/:id',
+        element: <RpgCharactersSheetsPage />,
         errorElement: <ErrorPage />,
     },
 ]);

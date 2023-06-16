@@ -1,16 +1,26 @@
-import { Card, CardBody, Heading, Image, Stack } from '@chakra-ui/react';
+import { Box, Card, CardBody, Image, Stack, Text } from '@chakra-ui/react';
 
 function RpgCard(): JSX.Element {
     return (
-        <Card maxW='sm'>
+        <Card maxW='250px'>
             <CardBody>
-                <Image
-                    src='../src/PDF/DD-Logo.png'
-                    alt='dungeons & dragon logo'
-                    borderRadius='lg'
-                />
-                <Stack mt='6' spacing='3'>
-                    <Heading size='md'>Dungeons & Dragon</Heading>
+                <Stack
+                    display='flex'
+                    direction='column'
+                    alignItems='center'
+                    justifyContent='center'
+                >
+                    <Image
+                        src='../public/image/DD-Logo.png'
+                        alt='dungeons & dragon logo'
+                        borderRadius='lg'
+                        boxSize='75%'
+                    />
+                    <Box mt='6' display='flex' justifyContent='center'>
+                        <Text as='b' fontSize='md'>
+                            Dungeons & Dragon
+                        </Text>
+                    </Box>
                 </Stack>
             </CardBody>
         </Card>
